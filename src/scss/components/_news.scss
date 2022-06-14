@@ -1,0 +1,85 @@
+.wrap {
+    background-color: color(black-color);
+    color: color(white-color);
+
+    .latestNews {
+        width: 80%;
+        margin: auto;
+        padding: 100px;
+    
+        .news__par {
+            margin-top: -50px;
+            font-size: 36px;
+            margin-left: 100px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .line2 {
+            position: relative;
+            margin-top: 30px;
+            margin-bottom: 60px;
+            margin-left: 100px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 2px;
+                left: 0;
+                height: 0;
+                width: 100px;
+                border-bottom: 3px solid color(greenBlue-color);
+            }
+        }
+
+        .latestNewsContainer {
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 2;
+
+            .arrow {
+                border: 1px solid color(greenBlue-color);
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+
+            .right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            .arrow2 {
+                border: 1px solid color(red-color);
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+
+            .right2 {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            .readMore {
+                display: inline-block;
+                margin-top: 40px;
+                font-size: 14px;
+                font-weight: 500;
+                color: color(white-color);
+                text-decoration: none;
+                margin-bottom: 70px;
+            }
+
+            .newsTitle {
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            .date {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+}

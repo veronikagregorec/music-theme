@@ -1,0 +1,14 @@
+$colors: (
+    "red-color": #FF5252,
+    "white-color": #fff,
+    "black-color": #101010,
+    "greenBlue-color": #0097A7,
+    "darkBlue-color": #161E21,
+    "lightGrey-color": #D4D4D4,
+    "mediumGrey-color": #949494,
+    "violet-color": #1D1524
+);
+
+@function color($color-name) {
+    @return map-get($colors , $color-name );
+}
