@@ -3,39 +3,35 @@
     color: color(white-color);
 
     .latestNews {
-        width: 80%;
-        margin: auto;
-        padding: 100px;
+        height: 700px;
+        width: 100%;
     
         .news__par {
-            margin-top: -50px;
+            padding-top: 50px;
             font-size: 36px;
-            margin-left: 100px;
+            display: flex;
+            justify-content: center;
             font-weight: 300;
             text-transform: uppercase;
         }
 
-        .line2 {
-            position: relative;
-            margin-top: 30px;
-            margin-bottom: 60px;
-            margin-left: 100px;
-
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 2px;
-                left: 0;
-                height: 0;
-                width: 100px;
-                border-bottom: 3px solid color(greenBlue-color);
-            }
-        }
-
         .latestNewsContainer {
+            height: 700px;
             display: flex;
-            justify-content: space-evenly;
-            line-height: 2;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.5;
+            padding-bottom: 100px;
+
+            .news{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            img{
+                width: 310px;
+                height: 203px;
+            }
 
             .arrow {
                 border: 1px solid color(greenBlue-color);
