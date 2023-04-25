@@ -4,7 +4,6 @@ const navLi = document.querySelectorAll(".nav__item");
 
 window.addEventListener("scroll", () => {
   let current = "";
-  // console.log(pageYOffset);
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
